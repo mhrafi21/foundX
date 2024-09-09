@@ -19,16 +19,23 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Profile",
+      href: "/profile",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Dashboard",
+      href: "/dashboard",
     },
     {
-      label: "Found Items",
-      href: "/found-items",
+      label: "Logout",
+      href: "/logout",
     },
   ],
+  links: {
+    github: "https://github.com/nextui-org/nextui",
+    twitter: "https://twitter.com/getnextui",
+    docs: "https://nextui.org",
+    discord: "https://discord.gg/9b6yyZKmH4",
+    sponsor: "https://patreon.com/jrgarciadev",
+  },
 };
