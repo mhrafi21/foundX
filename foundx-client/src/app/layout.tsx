@@ -1,12 +1,12 @@
 import "@/src/styles/globals.css";
 import { Metadata, Viewport } from "next";
+import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-
-import { Providers } from "./providers";
 
 import { siteConfig } from "@/src/config/site";
 import { fontSans } from "@/src/config/fonts";
-import { Navbar } from "@/src/components/navbar";
+import { Navbar } from "@/src/components/UI/navbar";
+import { Providers } from "../lib/Providers";
 
 export const metadata: Metadata = {
   title: {
@@ -41,8 +41,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-  
-        {children}
+          {children}
         </Providers>
       </body>
     </html>
